@@ -1,0 +1,19 @@
+# Tests for a one-direction circle case with a single path, including testing successful loading
+# (multiple children lexicographic ordering).
+
+LoadGraph circleNodes circleNodes.tsv
+
+ListChildren circleNodes A
+ListChildren circleNodes B
+ListChildren circleNodes C
+
+FindPath circleNodes A C
+
+FindPath circleNodes B A
+
+FindPath circleNodes A A
+
+# Bi-directions tested (a property of buildGraph in MarvelParser)
+FindPath circleNodes C A
+
+ListNodes circleNodes

@@ -1,0 +1,35 @@
+# Tests for a one-direction circle case with a single path and only one connecting edge
+# There is a tie.
+
+created graph g
+
+added node n1 to g
+added node n2 to g
+added node n3 to g
+added node n4 to g
+
+added edge e12 from n1 to n2 in g
+added edge e23 from n2 to n3 in g
+added edge e31 from n3 to n1 in g
+
+path from n1 to n2:
+n1 to n2 via e12
+
+path from n1 to n3:
+n1 to n2 via e12
+n2 to n3 via e23
+
+path from n3 to n1:
+n3 to n1 via e31
+
+path from n1 to n1:
+
+# tie case
+added edge e43 from n4 to n3 in g
+path from n1 to n3:
+n1 to n2 via e12
+n2 to n3 via e23
+
+path from n4 to n1:
+n4 to n3 via e43
+n3 to n1 via e31

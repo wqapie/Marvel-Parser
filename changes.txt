@@ -1,0 +1,7 @@
+Briefly list any changes you made to your graph class during hw-marvel, and why you made those changes.
+
+1. I set the Edges Class to be incomparable and deleted the compareTo() method, since I was not notified that Edges should not be comparable
+until the spec of hw6. As a consequence, I modified the CampusGraphTest and GraphTestDriver, basically adding Comparator to make
+sure the List<Edges> still can be compared and sorted.
+
+2. I deleted the method isParent, since it is redundant and kind of useless.

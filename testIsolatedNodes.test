@@ -1,0 +1,5 @@
+# Test isolated nodes (in different books)
+
+LoadGraph g isolated.tsv
+
+ListNodes g

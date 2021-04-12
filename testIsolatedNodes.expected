@@ -1,0 +1,5 @@
+# Test isolated nodes (in different books)
+
+loaded graph g
+
+g contains: Robin3 Robin666

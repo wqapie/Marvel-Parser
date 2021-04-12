@@ -1,0 +1,5 @@
+# Find the path for a single node with no edges.
+
+LoadGraph oneNode oneNode.tsv
+ListChildren oneNode Robin.Wang
+FindPath oneNode Robin.Wang Robin.Wang

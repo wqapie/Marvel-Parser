@@ -1,0 +1,22 @@
+# Tests building multiple graphs that contains the same hero or heroes in the same book, and verify that they
+# cannot "reach" each other.
+
+LoadGraph g1 buildMultiGraphs1.tsv
+
+LoadGraph g2 buildMultiGraphs2.tsv
+
+LoadGraph g3 buildMultiGraphs3.tsv
+
+ListNodes g1
+
+ListNodes g2
+
+ListNodes g3
+
+FindPath g1 Robin Robin3
+
+FindPath g3 Robin Robin3
+
+FindPath g1 Robin Robin
+
+FindPath g2 Robin Robin

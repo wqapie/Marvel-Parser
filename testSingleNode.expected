@@ -1,0 +1,5 @@
+# Find the path for a single node with no edges.
+
+loaded graph oneNode
+the children of Robin.Wang in oneNode are:
+path from Robin.Wang to Robin.Wang:

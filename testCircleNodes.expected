@@ -1,0 +1,24 @@
+# Tests for a one-direction circle case with a single path, including testing successful loading
+# (multiple children lexicographic ordering).
+
+loaded graph circleNodes
+
+the children of A in circleNodes are: B(1)
+the children of B in circleNodes are: A(1) C(2)
+the children of C in circleNodes are: B(2)
+
+path from A to C:
+A to B via 1
+B to C via 2
+
+path from B to A:
+B to A via 1
+
+path from A to A:
+
+# Bi-directions tested (a property of buildGraph in MarvelParser)
+path from C to A:
+C to B via 2
+B to A via 1
+
+circleNodes contains: A B C

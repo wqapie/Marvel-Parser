@@ -1,0 +1,17 @@
+# Tests for a one-direction circle case with a single path, including testing successful loading
+# (multiple children lexicographic ordering).
+
+loaded graph circleNodesWithLabelTie
+
+the children of A in circleNodesWithLabelTie are: B(1)
+the children of B in circleNodesWithLabelTie are: A(1) C(2)
+the children of C in circleNodesWithLabelTie are: B(2)
+
+path from A to C:
+A to B via 1
+B to C via 2
+
+path from B to A:
+B to A via 1
+
+circleNodesWithLabelTie contains: A B C

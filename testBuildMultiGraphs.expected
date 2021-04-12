@@ -1,0 +1,22 @@
+# Tests building multiple graphs that contains the same hero or heroes in the same book, and verify that they
+# cannot "reach" each other.
+
+loaded graph g1
+
+loaded graph g2
+
+loaded graph g3
+
+g1 contains: Robin
+
+g2 contains: Robin
+
+g3 contains: Robin3
+
+unknown character Robin3
+
+unknown character Robin
+
+path from Robin to Robin:
+
+path from Robin to Robin:

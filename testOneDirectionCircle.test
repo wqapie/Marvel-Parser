@@ -1,0 +1,19 @@
+# Tests for a one-direction circle case with a single path and only one connecting edge
+
+CreateGraph g
+
+AddNode g n1
+AddNode g n2
+AddNode g n3
+
+AddEdge g n1 n2 e12
+AddEdge g n2 n3 e23
+AddEdge g n3 n1 e31
+
+FindPath g n1 n2
+
+FindPath g n1 n3
+
+FindPath g n3 n1
+
+FindPath g n1 n1

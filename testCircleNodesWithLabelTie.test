@@ -1,0 +1,14 @@
+# Tests for a one-direction circle case with a single path, including testing successful loading
+# (multiple children lexicographic ordering).
+
+LoadGraph circleNodesWithLabelTie circleNodesWithLabelTie.tsv
+
+ListChildren circleNodesWithLabelTie A
+ListChildren circleNodesWithLabelTie B
+ListChildren circleNodesWithLabelTie C
+
+FindPath circleNodesWithLabelTie A C
+
+FindPath circleNodesWithLabelTie B A
+
+ListNodes circleNodesWithLabelTie
